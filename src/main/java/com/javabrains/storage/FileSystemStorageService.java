@@ -112,6 +112,7 @@ public class FileSystemStorageService implements StorageService {
 	public List<Uploadfile> listallmetadata() {
 
 	  Iterable<Uploadfile>	iterable = repo.findAll();
+	  //TODO - need to seperate the entity directly adding to controller, seperate this one.
 	  List<Uploadfile> filesList = new ArrayList<>();
 	 // iterable.forEach(target::add);
 	  for(Uploadfile listall: iterable){
